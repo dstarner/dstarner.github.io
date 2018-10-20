@@ -31,6 +31,10 @@ icon-row a {
   font-size: 1.5em;
 }
 
+.icon.big {
+  font-size: 2em;
+}
+
 .icon:hover {
   color: #cccccc;
 }

@@ -9,7 +9,7 @@ library.add(fab, fas);
 class Icon extends React.Component {
     render() {
         return (
-            <a className='icon' href={this.props.link}>
+            <a className={`icon ${this.props.big ? 'big' : ''}`} href={this.props.link}>
                 <FontAwesomeIcon icon={this.props.icon}/>
             </a>
         );
