@@ -39,6 +39,20 @@ icon-row a {
   color: #cccccc;
 }
 
+#tagline {
+  transition: 300ms all ease;
+  opacity: 1;
+  will-change: opacity;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.hide {
+  opacity: 0;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
