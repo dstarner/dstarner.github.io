@@ -28,7 +28,8 @@ class App extends Component {
     super();
     this.state = {
       timer: null,
-      tagline: this.getTagline(),
+      tagline: taglines[0],
+      index: 0,
     };
 
     this.getTagline = this.getTagline.bind(this);
@@ -50,7 +51,10 @@ class App extends Component {
   }
 
   getTagline() {
-    return taglines[Math.floor(Math.random() * taglines.length)];
+    let index = this.state.index + 1;
+    if (index === taglines.length) index = 0;
+    this.setState({index});
+    return taglines[this.state.index];
   }
 
   render() {
