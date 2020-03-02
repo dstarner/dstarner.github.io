@@ -5,18 +5,26 @@ import './App.css';
 import Icon from './Icon';
 
 const taglines = [
-  'I adventure and write code',
-  'DevOps & Site Reliability Engineer',
-  'Computer & Nature Lover',
-  'Cars, Computers, & the Outdoors'
+  'Site Reliability Engineer',
+  'Skilled breaker of things',
+  'Sucker for cute online cat videos',
+  'Systems management Kind of guy',
+  'Doesn\'t want to discuss politics',
+  '...including if generics should be in Go',
+  'Enjoys a good Italian sub',
+  'Takes long hikes when bored',
+  'Unashamedly a die-hard Ansible user',
+  'Writes more Groovy than one should',
+  '"Testing in Prod" is was my nickname',
+  'Occasionally writes a post to dev.to',
+  'Is slowly running out of tagline ideas',
 ]
 
 const icons = [
   {icon: ['fab', 'instagram'], link: 'https://www.instagram.com/danstarner/'},
   {icon: ['fab', 'twitter'], link: 'https://twitter.com/standarner'},
   {icon: ['fab', 'facebook'], link: 'https://www.facebook.com/dancstarner'},
-  {icon: ['fab', 'dev'], link: 'https://dev.to/dstarner', big: true},
-  {icon: ['fas', 'rss-square'], link: 'https://blog.danstarner.com', big: true},
+  {icon: ['fab', 'dev'], link: 'https://dev.to/dstarner'},
   {icon: ['fab', 'github'], link: 'https://github.com/dstarner'},
   {icon: ['fab', 'linkedin'], link: 'https://www.linkedin.com/in/danstarner/'},
   {icon: ['fas', 'envelope'], link: 'mailto:starner.daniel5@gmail.com'},
@@ -64,6 +72,7 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h1 style={{marginBottom: '.3px'}}>Dan Starner</h1>
           <p id='tagline'>
+            <strong>Some facts about me</strong><br/>
             {this.state.tagline}
           </p>
           <div className='icon-row'>
